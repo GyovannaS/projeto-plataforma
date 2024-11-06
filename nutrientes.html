@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo Alimentar</title>
+    <link rel="stylesheet" href="nutrientes.css">
+
+    <script>
+        let selectedFoods = {};
+        function addFood(food) {
+            if (selectedFoods[food]) {
+                selectedFoods[food]++;
+            } else {
+                selectedFoods[food] = 1;
+            }
+            alert(food + ' adicionado! Total: ' + selectedFoods[food]);
+        }
+        function removeFood(food) {
+            if (selectedFoods[food] && selectedFoods[food] > 0) {
+                selectedFoods[food]--;
+                alert(food + ' removido! Total: ' + selectedFoods[food]);
+            } else {
+                alert(food + ' não está na lista ou já está em zero.');
+            }
+        }
+        function finalizeSelection() {
+            let summary = 'Você selecionou:\n';
+            for (let food in selectedFoods) {
+                summary += food + ': ' + selectedFoods[food] + ' porções\n';
+            }
+            alert(summary);
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="logo-container"></div>
+            <img class="logo" src="logo.png" alt="Nutri Vida" width="40">  
+          </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="nutri.html">Contato</a></li>
+            <li><a href="PerfilCompleto.html">Perfil</a></li>
+            <li><a href="refeicoes.html">Biblioteca Nutricional</a></li>
+            <li><a href="#">Sair</a></li>
+
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="header">
+            <h1>Alimentos</h1>
+            <button class="sort-button">Mais recente</button>
+        </div>
+        <div class="food-item">
+            <p>Arroz Integral<br>96 cal, 3 colheres de sopa</p>
+            <div class="button-container">
+                <button class="add-button" onclick="addFood('Arroz Integral')">+</button>
+                <button class="remove-button" onclick="removeFood('Arroz Integral')">-</button>
+            </div>
+        </div>
+        <div class="food-item">
+            <p>Feijão Preto<br>45 cal, 3 colheres de sopa</p>
+            <div class="button-container">
+                <button class="add-button" onclick="addFood('Feijão Preto')">+</button>
+                <button class="remove-button" onclick="removeFood('Feijão Preto')">-</button>
+            </div>
+        </div>
+        <div class="food-item">
+            <p>Frango Grelhado<br>210 cal, 100 g</p>
+            <div class="button-container">
+                <button class="add-button" onclick="addFood('Frango Grelhado')">+</button>
+                <button class="remove-button" onclick="removeFood('Frango Grelhado')">-</button>
+            </div>
+        </div>
+        <div class="food-item">
+            <p>Salada de Tomate<br>21 cal, 100 g</p>
+            <div class="button-container">
+                <button class="add-button" onclick="addFood('Salada de Tomate')">+</button>
+                <button class="remove-button" onclick="removeFood('Salada de Tomate')">-</button>
+            </div>
+        </div>
+        <div class="food-item">
+            <p>Maçã<br>52 cal, 100 g</p>
+            <div class="button-container">
+                <button class="add-button" onclick="addFood('Maçã')">+</button>
+                <button class="remove-button" onclick="removeFood('Maçã')">-</button>
+            </div>
+        </div>
+        <div class="food-item">
+            <p>Banana<br>89 cal, 100 g</p>
+            <div class="button-container">
+                <button class="add-button" onclick="addFood('Banana')">+</button>
+                <button class="remove-button" onclick="removeFood('Banana')">-</button>
+            </div>
+        </div>
+        <div class="food-item">
+            <p>Ovo Cozido<br>155 cal, 100 g</p>
+            <div class="button-container">
+                <button class="add-button" onclick="addFood('Ovo Cozido')">+</button>
+                <button class="remove-button" onclick="removeFood('Ovo Cozido')">-</button>
+            </div>
+        </div>
+        <div class="food-item">
+            <p>Brócolis Cozido<br>35 cal, 100 g</p>
+            <div class="button-container">
+                <button class="add-button" onclick="addFood('Brócolis Cozido')">+</button>
+                <button class="remove-button" onclick="removeFood('Brócolis Cozido')">-</button>
+            </div>
+        </div>
+        <div class="food-item">
+            <p>Batata Doce Assada<br>86 cal, 100 g</p>
+            <div class="button-container">
+                <button class="add-button" onclick="addFood('Batata Doce Assada')">+</button>
+                <button class="remove-button" onclick="removeFood('Batata Doce Assada')">-</button>
+            </div>
+        </div>
+        <div class="food-item">
+            <p>Amêndoas<br>576 cal, 100 g</p>
+            <div class="button-container">
+                <button class="add-button" onclick="addFood('Amêndoas')">+</button>
+                <button class="remove-button" onclick="removeFood('Amêndoas')">-</button>
+            </div>
+        </div>
+        <div class="food-item">
+            <p>Morango<br>32 cal, 100 g</p>
+            <div class="button-container">
+                <button class="add-button" onclick="addFood('Morango')">+</button>
+                <button class="remove-button" onclick="removeFood('Morango')">-</button>
+            </div>
+        </div>
+        <div class="food-item">
+            <p>Pizza de Calabresa<br>266 cal, 100 g</p>
+            <div class="button-container">
+                <button class="add-button" onclick="addFood('Pizza de Calabresa')">+</button>
+                <button class="remove-button" onclick="removeFood('Pizza de Calabresa')">-</button>
+            </div>
+        </div>
+        <div class="food-item">
+            <p>Sorvete de Baunilha<br>207 cal, 100 g</p>
+            <div class="button-container">
+                <button class="add-button" onclick="addFood('Sorvete de Baunilha')">+</button>
+                <button class="remove-button" onclick="removeFood('Sorvete de Baunilha')">-</button>
+            </div>
+        </div>
+        <div class="food-item">
+            <p>Chocolate ao Leite<br>535 cal, 100 g</p>
+            <div class="button-container">
+                <button class="add-button" onclick="addFood('Chocolate ao Leite')">+</button>
+                <button class="remove-button" onclick="removeFood('Chocolate ao Leite')">-</button>
+            </div>
+        </div>
+        <div class="food-item">
+            <p>Filé Mignon<br>250 cal, 100 g</p>
+            <div class="button-container">
+                <button class="add-button" onclick="addFood('Filé Mignon')">+</button>
+                <button class="remove-button" onclick="removeFood('Filé Mignon')">-</button>
+            </div>
+        </div>
+        <div class="food-item">
+            <p>Abacate<br>160 cal, 100 g</p>
+            <div class="button-container">
+                <button class="add-button" onclick="addFood('Abacate')">+</button>
+                <button class="remove-button" onclick="removeFood('Abacate')">-</button>
+            </div>
+        </div>
+        <div class="food-item">
+            <p>Espinafre<br>23 cal, 100 g</p>
+            <div class="button-container">
+                <button class="add-button" onclick="addFood('Espinafre')">+</button>
+                <button class="remove-button" onclick="removeFood('Espinafre')">-</button>
+            </div>
+        </div>
+        <div class="food-item">
+            <p>Cenoura Crua<br>41 cal, 100 g</p>
+            <div class="button-container">
+                <button class="add-button" onclick="addFood('Cenoura Crua')">+</button>
+                <button class="remove-button" onclick="removeFood('Cenoura Crua')">-</button>
+            </div>
+        </div>
+        <form action="refeicoes.html" method="GET">
+            <button class="final-button" onclick="finalizeSelection()">Finalizar Seleção</button>
+        </form>
+</body>
+</html>

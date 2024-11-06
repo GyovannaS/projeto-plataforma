@@ -1,0 +1,163 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(292deg, #b0eeaf, #a0f3de);
+    color:black;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: -730px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffffb0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.544);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: black;
+}
+
+.sort-button {
+    padding: 10px 20px;
+    background-color: #69dcb49c;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sort-button:hover {
+    background-color: #006666;
+}
+
+.food-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.food-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff4e;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    border: 1px solid #4b4b55;
+    margin-bottom: 20px; 
+    
+}
+
+
+
+.food-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+
+.add-button,
+.remove-button {
+    background-color: #007aff;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-button:hover {
+    background-color: #005bb5;
+    transform: scale(1.1);
+}
+
+.remove-button {
+    background-color: #ff3b30;
+}
+
+.remove-button:hover {
+    background-color: #c53020;
+    transform: scale(1.1);
+}
+
+.final-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #69dcb49c;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.final-button:hover {
+    background-color: #006666;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #e6e6e6;
+}
+

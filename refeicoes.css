@@ -1,0 +1,119 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(292deg, #b0eeaf, #a0f3de);
+    margin: 0;
+    padding: 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffffb0;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #69dcb49c;
+    color: black;
+    border-radius: 10px 10px 0 0;
+}
+.header h1 {
+    margin: 0;
+}
+.meal-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+}
+.meal-button:hover {
+    background-color: #e6e6e6;
+}
+.meal-button span {
+    color: #333;
+}
+.add-button {
+    background-color: #00cc66;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.add-button:hover {
+    background-color: #00994d;
+}
+.weight-section {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+.next-meal {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    color: black;
+}
+footer {
+    background-color: #69dcb49c;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #e6e6e6;
+}
+
+nav .logo-container {
+    margin-left: 20px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversa com Nutricionista</title>
+    <link rel="stylesheet" href="nutri.css">
+</head>
+<body>
+        <nav>
+            <ul>
+                <li>
+                    <img src="logo.png" alt="Logo" class="logo"> 
+                </li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="nutri.html">Contato</a></li>
+                <li><a href="PerfilCompleto.html">Perfil</a></li>
+                <li><a href="refeicoes.html">Biblioteca Nutricional</a></li>
+                <li><a href="#">Sair</a></li>
+
+            </ul>
+        </nav>
+
+    <main>
+
+        <section class="chatbox">
+            <div class="chat-header">
+                <h1>Conversa com Nutricionista</h1>
+            </div>
+
+            <div class="chat-window" id="chat-window">
+                <div class="message received">
+                    <p>Nutricionista: Recebi suas informações, irei preparar uma dica.</p>
+                </div>
+            </div>
+
+            <form class="message-form" onsubmit="sendMessage(event)">
+                <textarea id="message-input" placeholder="Envie uma mensagem..."></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+      
+        <aside class="nutritionist-info">
+            <h2>Informações do Nutricionista</h2>
+            <p><strong>Nome: Eliana Maria</strong> </p>
+            <p><strong>Avaliação:</strong> 
+                <span class="fixed-star-rating">
+                    ★★★★★
+                </span>
+            </p>
+            <img src="nutri.png" alt="Descrição da Imagem">
+        </aside>
+        
+        
+    </main>
+
+   
+</body>
+</html>

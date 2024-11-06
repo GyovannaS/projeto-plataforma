@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(292deg, #b0eeaf, #a0f3de);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.093); 
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: right;
+    z-index: 1000;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+    margin-top: 100px; 
+}
+
+
+.login-form {
+    background: rgba(255, 255, 255, 0.73);
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
+    width: 40%;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+   
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #69dcb49c;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #006666;
+}
+
+.forgot-link {
+    display: block;
+    margin-top: 15px;
+    color: #008080;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+.signup-form {
+    background: rgba(255, 255, 255, 0.73);
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
+    width: 40%;
+    border-radius: 8px;
+}
+
+.terms-container {
+    margin-bottom: 15px;
+}
+
+.terms-container label {
+    font-size: 14px;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 40px 0;
+    background: rgba(0, 0, 0, 0.);
+    color: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+}
+

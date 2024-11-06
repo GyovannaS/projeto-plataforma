@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f084;
+    background-image: url('fundo.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+header {
+    background: rgba(233, 229, 229, 0.5);
+    padding: 15px;
+    text-align: left; 
+}
+
+.dark-link {
+    color: #080808; 
+    font-weight: bold;
+
+}
+
+.dark-link:hover {
+    color: #1a1818; 
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+ 
+.logo {
+    margin-left: auto; 
+}
+
+nav ul {
+    list-style: none;
+     padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+
+
+nav a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e0e0e0;
+}
+
+.hero {
+    background: url('https://source.unsplash.com/1600x400/?healthy-food,nutrition') no-repeat center center/cover;
+    color: black;
+    text-align: center; 
+    padding: 50px 20px; 
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+}
+
+.action-btn {
+    background: #ffffff;
+    color: #4CAF50;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.action-btn:hover {
+    background: #e0e0e086;
+    transform: scale(1.05);
+}
+
+.main-content {
+    background: rgba(233, 229, 229, 0.5);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.intro h2 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    color: black;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 90px 0;
+    background: rgba(0, 0, 0, 0.);
+    color: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+}

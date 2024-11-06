@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil e Quiz Nutricional</title>
+    <link rel="stylesheet" href="perguntasquiz.css">
+    
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo-container">
+              <img class="logo" src="logo.png" alt="Nutri Vida" width="40">  
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="PerfilCompleto.html">Perfil</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+      
+
+      
+        <section class="profile-section">
+            <h2>Informações Pessoais</h2>
+            <form action="PerfilCompleto.html" method="GET" class="profile-info">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required>
+
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" name="peso" step="0.1" required>
+
+                <label for="altura">Altura (m):</label>
+                <input type="number" id="altura" name="altura" step="0.01" required>
+
+                <label>Gênero:</label>
+                <select class="opcoes" name="assunto">
+                    <option disabled="disabled" selected="selected">Selecione a opção</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                </select>
+            </form>
+        </section>
+
+    
+        <section class="quiz-section">
+            <h2>Quiz Nutricional</h2>
+            <form action="PerfilCompleto.html" method="GET">
+                <!-- Pergunta 1: Objetivo Alimentar -->
+                <div class="question">
+                    <label for="objetivo">Qual é seu objetivo alimentar?</label><br>
+                    <input type="radio" name="objetivo" value="Perder Peso"> Perder Peso<br>
+                    <input type="radio" name="objetivo" value="Ganhar Massa Muscular"> Ganhar Massa Muscular<br>
+                    <input type="radio" name="objetivo" value="Manter Alimentação"> Manter Alimentação
+                </div>
+
+                <!-- Pergunta 2: Restrições Alimentares -->
+                <div class="question">
+                    <label for="restricoes">Você tem alguma restrição alimentar? (Selecione quantas opções quiser)</label><br>
+                    <input type="checkbox" name="restricoes" value="Vegetariano"> Vegetariano(a)<br>
+                    <input type="checkbox" name="restricoes" value="Intolerância"> Intolerância a Lactose/Glúten<br>
+                    <input type="checkbox" name="restricoes" value="Alergia"> Alergia a algum alimento específico<br>
+                    <input type="checkbox" name="restricoes" value="Nenhuma"> Nenhuma restrição<br>
+                    <label for="outros-restricoes">Outros?</label>
+                    <textarea id="outros-restricoes" name="outros-restricoes" placeholder="Descreva aqui outras restrições alimentares"></textarea>
+                </div>
+
+                <!-- Pergunta 3: Refeições Diárias -->
+                <div class="question">
+                    <label for="refeicoes">Quantas refeições costuma fazer por dia?</label><br>
+                    <input type="radio" name="refeicoes" value="1-2"> 1-2<br>
+                    <input type="radio" name="refeicoes" value="3-4"> 3-4<br>
+                    <input type="radio" name="refeicoes" value="5 ou mais"> 5 ou mais
+                </div>
+
+                <!-- Pergunta 4: Consumo de Água -->
+                <div class="question">
+                    <label for="agua">Quantos litros de água você costuma beber por dia?</label><br>
+                    <input type="radio" name="agua" value="Menos de 1L"> Menos de 1L<br>
+                    <input type="radio" name="agua" value="1-2L"> 1-2L<br>
+                    <input type="radio" name="agua" value="2-3L"> 2-3L<br>
+                    <input type="radio" name="agua" value="Mais de 3L"> Mais de 3L
+                </div>
+
+                <!-- Pergunta 5: Frequência de Exercícios -->
+                <div class="question">
+                    <label for="exercicios">Com que frequência você pratica exercícios físicos?</label><br>
+                    <input type="radio" name="exercicios" value="Nunca"> Nunca<br>
+                    <input type="radio" name="exercicios" value="1-2 vezes por semana"> 1-2 vezes por semana<br>
+                    <input type="radio" name="exercicios" value="3-5 vezes por semana"> 3-5 vezes por semana<br>
+                    <input type="radio" name="exercicios" value="Todos os dias"> Todos os dias
+                </div>
+
+                <!-- Pergunta 6: Outras Informações (Outros) -->
+                <div class="question">
+                    <label for="outros-info">Outras informações?</label>
+                    <textarea id="outros-info" name="outros-info" placeholder="Se houver algo mais que você gostaria de compartilhar, escreva aqui"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar Respostas</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>Termos de Serviço | Política de Privacidade</p>
+    </footer>
+</body>
+</html>
